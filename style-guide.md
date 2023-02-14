@@ -33,3 +33,6 @@ The designs were created to the following widths:
 
 - Family: [Kumbh Sans](https://fonts.google.com/specimen/Kumbh+Sans)
 - Weights: 400, 700
+
+### Icons
+- [React Icons](https://react-icons.github.io/react-icons/)
