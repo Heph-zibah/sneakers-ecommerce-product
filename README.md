@@ -48,7 +48,7 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
+- [Lightbox](https://www.npmjs.com/package/lightbox.js-react) - For carousel
 - [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
@@ -78,8 +78,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [Oluwatosin A Daramola](https://medium.com/@oluwatosinhephzibah)
+- Frontend Mentor - [@Heph-zibah](https://www.frontendmentor.io/profile/Heph-zibah)
+- Twitter - [@undaunted_pen](https://twitter.com/undaunted_pen)
 
 ## Acknowledgments
