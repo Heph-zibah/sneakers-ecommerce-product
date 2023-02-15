@@ -4,6 +4,7 @@ import {FaBars} from 'react-icons/fa'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {links} from './linkData'
 import avatar from '../../Assets/image-avatar.png'
+import './header.css'
 const Header = () => {
   return (
     <>
