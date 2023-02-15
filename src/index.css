@@ -22,4 +22,21 @@
 --white: hsl(0, 0%, 100%);
 --black: hsl(0, 0%, 0%);
 /* black:(with 75% opacity for lightbox background) */
+
+/* Padding */
+--body-padding-xs: 20px;
+--body-padding-sm: 40px 50px;
+--body-padding-lg:40px 120px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+body {
+    font-family: 'Khumbh Sans', sans-serif;
 }
