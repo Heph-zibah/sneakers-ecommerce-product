@@ -2,17 +2,70 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: var(--body-padding-xs); 
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .nav__links {
-    display: flex;
+    display: none;
 }
 
 .nav__action {
     display: flex;
     align-items: center;
+    gap: 20px;
+}
+
+.nav__cart {
+    color: var(--darkGrayishBlue);
+    font-size: 30px;
 }
 
 .nav__action img {
-    width: 20px;
+    width: 30px;
 }
+
+@media screen and (min-width: 800px) {
+    nav {
+        padding: var(--body-padding-sm); 
+    }
+
+    .nav__head {
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    
+    .nav__links {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav__link {
+        list-style-type: none;
+        text-transform: capitalize;
+    }
+
+    .nav__link a {
+        color: var(--darkGrayishBlue);
+    }
+
+    .nav__action {
+        gap: 30px;
+    }
+
+    .nav__action img {
+        width: 50px;
+    }
+}
+
+@media screen and (min-width:1200px){
+    nav {
+        padding: var(--body-padding-lg);
+    }
+} 
