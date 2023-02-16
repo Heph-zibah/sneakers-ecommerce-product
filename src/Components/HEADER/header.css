@@ -63,6 +63,7 @@ nav {
     height: 100%;
     transition: 2s ease-in-out;
     display: block;
+    z-index: 500;
 }
 .mobile__nav--div {
     height: 100%;
