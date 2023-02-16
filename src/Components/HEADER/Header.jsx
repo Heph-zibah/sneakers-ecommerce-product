@@ -5,8 +5,10 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {links} from './linkData'
 import avatar from '../../Assets/image-avatar.png'
 import './header.css'
+import Cart from './Cart'
 const Header = () => {
-  const [nav, setNav] = useState(false)
+  const [nav, setNav] = useState(false);
+  const [cartToggle, setCartToggle] = useState(false)
   return (
     <>
      <header>
@@ -24,7 +26,7 @@ const Header = () => {
             </ul>
         </div>
           <div className='nav__action'>
-            <AiOutlineShoppingCart className='nav__cart'/>
+            <AiOutlineShoppingCart className='nav__cart' onClick={() => setCartToggle(!cartToggle)}/>
             <img src={avatar} alt="avatar"  className='nav__avatar'/>
           </div>
 
@@ -32,16 +34,17 @@ const Header = () => {
       </nav>
      </header>
      <div className={!nav ?'mobile__nav' : 'show__nav'}>
-          <div className='mobile__nav--div'>
-            <FaTimes className='mobile__nav--icon' onClick={() => setNav(!nav)}/>
-            <ul className='mobile__nav--links'>
-              {links.map((link) => {
-                    const {url, id, text} = link;
-                    return <li className='mobile__nav--link' key={id}><a href={url}>{text}</a></li>
-                  })}
-              </ul>
-          </div>
+        <div className='mobile__nav--div'>
+          <FaTimes className='mobile__nav--icon' onClick={() => setNav(!nav)}/>
+          <ul className='mobile__nav--links'>
+            {links.map((link) => {
+                const {url, id, text} = link;
+                  return <li className='mobile__nav--link' key={id}><a href={url}>{text}</a></li>
+                })}
+          </ul>
         </div>
+      </div>
+      {cartToggle && <Cart/>}
     </>
   )
 }
