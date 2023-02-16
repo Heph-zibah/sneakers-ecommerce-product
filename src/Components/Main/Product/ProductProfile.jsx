@@ -23,13 +23,13 @@ const ProductProfile = () => {
                 <div className='product__action--modify'>
                     <HiMinus className='product__action--add'/>
                     <p className='product__action--num'>0</p>
-                    <HiPlus className='product__aaction--minus'/>
+                    <HiPlus className='product__action--minus'/>
 
                 </div>
                 <div className='product__action--btn'>
                     <button>
                         <AiOutlineShoppingCart/>
-                        Add to cart
+                        <span>Add to cart</span>
                     </button>
                 </div>
             </div>
