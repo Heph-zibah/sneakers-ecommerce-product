@@ -12,7 +12,7 @@
 :root {
 /* Primary */
 --orange: hsl(26, 100%, 55%);
---pale0range: hsl(25, 100%, 94%);
+--paleOrange: hsl(25.2, 100%, 93.9%);
 
 /* Neutral */
 --veryDarkBlue: hsl(220, 13%, 13%);
@@ -42,4 +42,20 @@ body {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.6;
+}
+
+main {
+    padding: var(--body-padding-xs);
+}
+
+@media screen and (min-width:800px) {
+    main{
+    padding: var(--body-padding-sm);
+    }
+}
+
+@media screen and (min-width:1200px) {
+    main{
+    padding: var(--body-padding-lg);
+    }
 }
