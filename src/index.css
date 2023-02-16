@@ -45,7 +45,7 @@ body {
 }
 
 main {
-    padding: var(--body-padding-xs);
+    padding: 0 0;
 }
 
 @media screen and (min-width:800px) {
