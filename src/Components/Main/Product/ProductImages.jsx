@@ -5,7 +5,7 @@ const ProductImages = () => {
   return (
     <>
         <div className='product__img'>
-            <img src={lightbox} alt="shoe" />
+            {/* <img src={lightbox} alt="shoe" /> */}
         </div>
     </>
   )
