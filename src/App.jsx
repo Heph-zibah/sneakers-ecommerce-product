@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Components/HEADER/Header";
-import Content from "./Components/Main/Content";
+import Product from "./Components/Main/Product/Product";
 
 function App() {
   return (
@@ -8,7 +8,7 @@ function App() {
       <div className="App">
         <Header/>
         <main>
-        <Content/>
+        <Product/>
         </main>
       </div>
     </>
