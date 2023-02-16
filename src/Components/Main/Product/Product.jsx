@@ -1,5 +1,6 @@
 import React from 'react'
 import ProductImages from './ProductImages'
+import './Product.css'
 
 import ProductProfile from './ProductProfile'
 
