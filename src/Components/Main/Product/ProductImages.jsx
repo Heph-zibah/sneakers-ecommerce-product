@@ -9,7 +9,7 @@ import thumbnail4 from '../../../Assets/image-product-4-thumbnail.jpg'
 const ProductImages = () => {
   return (
     <>
-      <div>
+      <div className='product__images'>
         <div className='product__img'>
             <IoIosArrowBack className='product__arrow product__arrow--left'/>
             <img src={lightbox} alt="shoe" />
