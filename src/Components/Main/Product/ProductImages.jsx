@@ -15,7 +15,7 @@ const ProductImages = () => {
             <img src={lightbox} alt="shoe" />
             <IoIosArrowForward className='product__arrow product__arrow--right'/>
         </div>
-        <div>
+        <div className='product__thumbnail'>
           <img src={thumbnail1} alt="show" />
           <img src={thumbnail2} alt="show" />
           <img src={thumbnail3} alt="show" />
