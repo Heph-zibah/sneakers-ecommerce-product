@@ -28,6 +28,9 @@
 .product__arrow--right {
     right: 10px;
 }
+.product__thumbnail {
+    display: none
+}
 
 /* PRODUCT CONTENT PROFILE */
 .product__content {
@@ -136,6 +139,21 @@
         width: 60%;
         height: 60%;
         border-radius: 20px;
+    }
+    .product__thumbnail {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .product__thumbnail img {
+        width: 60px;
+        border-radius: 8px;
+
+    } 
+    .product__thumbnail img:hover {
+       opacity: .5;
+        border: 1px solid var(--darkGrayishBlue);
     }
     .product__arrow {
         display: none;
