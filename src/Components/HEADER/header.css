@@ -33,6 +33,7 @@ nav {
 .nav__cart--div {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .nav__cart {
@@ -50,7 +51,10 @@ nav {
     padding: 3px 8px;
     border-radius:50px;
     color: var(--white);
-    font-size: 14px;
+    font-size: 10px;
+    position: absolute;
+    right: -7px;
+    top: -10px;
 }
 
 .nav__action img {
