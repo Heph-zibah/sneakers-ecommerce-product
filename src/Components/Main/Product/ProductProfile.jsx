@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {HiMinus,HiPlus} from 'react-icons/hi'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {productProfile} from './ProductData.js'
 import './Product.css'
 
-const ProductProfile = () => {
+const ProductProfile = ({itemCount, setItemCount}) => {
+    
   return (
     <>
         <div className='product__content'>
@@ -21,9 +22,13 @@ const ProductProfile = () => {
             </div>
             <div className='product__action'>
                 <div className='product__action--modify'>
-                    <HiMinus className='product__action--add'/>
-                    <p className='product__action--num'>0</p>
-                    <HiPlus className='product__action--minus'/>
+                    <HiMinus className='product__action--add' onClick={() => {
+                        setItemCount(Math.max(itemCount - 1, 0))
+                    }}/>
+                    <p className='product__action--num'>{itemCount}</p>
+                    <HiPlus className='product__action--minus' onClick={() => {
+                        setItemCount(itemCount + 1)
+                    }}/>
 
                 </div>
                 <div className='product__action--btn'>
