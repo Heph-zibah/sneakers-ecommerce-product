@@ -30,6 +30,11 @@ nav {
     gap: 20px;
 }
 
+.nav__cart--div {
+    display: flex;
+    align-items: center;
+}
+
 .nav__cart {
     color: var(--darkGrayishBlue);
     font-size: 30px;
@@ -38,6 +43,14 @@ nav {
 .nav__cart:hover{
     color: var(--black);
     transition: .5s ease-in;
+}
+
+.nav__cart--count {
+    background-color: var(--orange);
+    padding: 3px 8px;
+    border-radius:50px;
+    color: var(--white);
+    font-size: 14px;
 }
 
 .nav__action img {
