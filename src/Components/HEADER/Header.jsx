@@ -6,7 +6,7 @@ import {links} from './linkData'
 import avatar from '../../Assets/image-avatar.png'
 import './header.css'
 import Cart from './Cart'
-const Header = () => {
+const Header = ({itemCount, setItemCount, cartItems}) => {
   const [nav, setNav] = useState(false);
   const [cartToggle, setCartToggle] = useState(false)
   return (
@@ -26,7 +26,10 @@ const Header = () => {
             </ul>
         </div>
           <div className='nav__action'>
-            <AiOutlineShoppingCart className='nav__cart' onClick={() => setCartToggle(!cartToggle)}/>
+            <div className='nav__cart--div'>
+              <AiOutlineShoppingCart className='nav__cart' onClick={() => setCartToggle(!cartToggle)}/>
+              <span className='nav__cart--count'>0</span>
+            </div>
             <img src={avatar} alt="avatar"  className='nav__avatar'/>
           </div>
 
@@ -44,7 +47,7 @@ const Header = () => {
           </ul>
         </div>
       </div>
-      {cartToggle && <Cart/>}
+      {cartToggle && <Cart cartItems={cartItems}/>}
     </>
   )
 }
