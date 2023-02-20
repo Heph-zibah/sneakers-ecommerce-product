@@ -4,8 +4,13 @@ import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {productProfile} from './ProductData.js'
 import './Product.css'
 
-const ProductProfile = ({itemCount, setItemCount}) => {
+const ProductProfile = ({itemCount, setItemCount, setCartItems}) => {
     
+    const handleAdd = () => {
+        setCartItems((prev) => prev + itemCount)
+        setItemCount(0)
+    }
+
   return (
     <>
         <div className='product__content'>
@@ -23,20 +28,20 @@ const ProductProfile = ({itemCount, setItemCount}) => {
             <div className='product__action'>
                 <div className='product__action--modify'>
                     <div className='product__action--minus' onClick={() => {
-                            setItemCount(Math.max(itemCount - 1, 0))
+                            setItemCount((prev => (prev !== 0 ? prev - 1 : 0)))
                         }}>
                         <HiMinus />
                     </div>
                     <p className='product__action--num'>{itemCount}</p>
                     <div className='product__action--add' onClick={() => {
-                            setItemCount(itemCount + 1)
+                            setItemCount((prev) => prev + 1)
                         }}>
                         <HiPlus />
                     </div>
 
                 </div>
                 <div className='product__action--btn'>
-                    <button>
+                    <button onClick={handleAdd}>
                         <AiOutlineShoppingCart/>
                         <span>Add to cart</span>
                     </button>
