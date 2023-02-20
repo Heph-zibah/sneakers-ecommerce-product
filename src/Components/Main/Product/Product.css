@@ -107,7 +107,7 @@
 }
 
 .product__action--add, .product__action--minus {
-    padding:0 10px;
+    /* padding:0 10px; */
 }
 
 .product__action--num {
@@ -130,8 +130,10 @@
     width: 100%;
 }
 
-@media screen and (min-width:500px) {
-
+@media screen and (min-width:600px) {
+    .product__action {
+        flex-direction: row;
+    }
 }
 
 @media screen and (min-width:800px) {
@@ -187,7 +189,13 @@
         grid-column: 2/4;
     }
     .product__action {
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (min-width:1020px){
+    .product__action {
         flex-direction: row;
-        gap: 1rem;
     }
 }
