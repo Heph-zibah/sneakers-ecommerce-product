@@ -3,7 +3,7 @@ import Header from "./Components/HEADER/Header";
 import Product from "./Components/Main/Product/Product";
 
 function App() {
-  const [itemCount, setItemCount] = useState(1)
+  const [itemCount, setItemCount] = useState(0)
   const [cartItems, setCartItems] = useState('')
   
   return (
