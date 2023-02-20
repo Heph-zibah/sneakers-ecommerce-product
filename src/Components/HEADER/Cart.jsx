@@ -5,27 +5,28 @@ import { productProfile } from '../Main/Product/ProductData'
 import './Cart.css'
 
 
-const Cart = ({cartItems}) => {
+const Cart = ({cartItems, setCartItems}) => {
   return (
     <>
         <aside>
             <div className='cart'>
                 <div className=''>
                     <p className='cart__header'>Cart</p>
-                    {cartItems.length === 0 && <p className='cart__body'>Your cart is empty</p>}
+                    {cartItems === 0 && <p className='cart__body'>Your cart is empty</p>}
                 </div>
-                {cartItems.length > 0 && 
+                {cartItems > 0 && 
                 <div className='cart__container'> 
-                <div className='cart__items'>
-                    <img src={thumbnail} alt='shoe' />
-                    <div>
-                        <p>{productProfile.productName}</p>
-                        <p>${productProfile.discountPrice} x ${productProfile.discountPrice}</p>
+                    <div className='cart__items'>
+                        <img src={thumbnail} alt='shoe' />
+                        <div>
+                            <p>{productProfile.productName}</p>
+                            <span>${productProfile.discountPrice} x {cartItems}   </span>
+                            <span>${productProfile.discountPrice * cartItems}</span>
+                        </div>
+                        <RiDeleteBin6Line onClick={() => setCartItems(0)}/>
                     </div>
-                    <RiDeleteBin6Line/>
-                </div>
-                <button>Checkout</button>
-            </div>}
+                    <button>Checkout</button>
+                </div>}
             </div>
         </aside>
     </>
