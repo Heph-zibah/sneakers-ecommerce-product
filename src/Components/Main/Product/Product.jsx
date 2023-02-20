@@ -4,12 +4,12 @@ import './Product.css'
 
 import ProductProfile from './ProductProfile'
 
-const Product = ({itemCount, setItemCount}) => {
+const Product = ({itemCount, setItemCount, setCartItems}) => {
   return (
     <>
         <section className='product'>
             <ProductImages/>
-            <ProductProfile itemCount={itemCount} setItemCount={setItemCount}/>
+            <ProductProfile itemCount={itemCount} setItemCount={setItemCount} setCartItems={setCartItems}/>
         </section>
     </>
   )
