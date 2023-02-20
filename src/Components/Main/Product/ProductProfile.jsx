@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {HiMinus,HiPlus} from 'react-icons/hi'
 import {AiOutlineShoppingCart} from 'react-icons/ai'
 import {productProfile} from './ProductData.js'
