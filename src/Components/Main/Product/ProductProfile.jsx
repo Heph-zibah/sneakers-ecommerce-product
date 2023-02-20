@@ -22,13 +22,17 @@ const ProductProfile = ({itemCount, setItemCount}) => {
             </div>
             <div className='product__action'>
                 <div className='product__action--modify'>
-                    <HiMinus className='product__action--add' onClick={() => {
-                        setItemCount(Math.max(itemCount - 1, 0))
-                    }}/>
+                    <div className='product__action--minus' onClick={() => {
+                            setItemCount(Math.max(itemCount - 1, 0))
+                        }}>
+                        <HiMinus />
+                    </div>
                     <p className='product__action--num'>{itemCount}</p>
-                    <HiPlus className='product__action--minus' onClick={() => {
-                        setItemCount(itemCount + 1)
-                    }}/>
+                    <div className='product__action--add' onClick={() => {
+                            setItemCount(itemCount + 1)
+                        }}>
+                        <HiPlus />
+                    </div>
 
                 </div>
                 <div className='product__action--btn'>

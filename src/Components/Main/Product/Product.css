@@ -106,8 +106,13 @@
     border-radius: 8px;
 }
 
+.product__action--add, .product__action--minus {
+    padding:0 10px;
+}
+
 .product__action--num {
     font-weight: 700;
+    font-size: 20px;
 }
 
 .product__action--btn button{
