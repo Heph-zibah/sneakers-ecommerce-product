@@ -5,7 +5,7 @@ import { productProfile } from '../Main/Product/ProductData'
 import './Cart.css'
 
 
-const Cart = ({cartItems, setCartItems}) => {
+const Cart = ({cartItems, setCartItems, cartToggle, setCartToggle}) => {
   return (
     <>
         <aside>
@@ -20,12 +20,12 @@ const Cart = ({cartItems, setCartItems}) => {
                         <img src={thumbnail} alt='shoe' />
                         <div>
                             <p>{productProfile.productName}</p>
-                            <span>${productProfile.discountPrice} x {cartItems}   </span>
-                            <span>${productProfile.discountPrice * cartItems}</span>
+                            <span>${productProfile.discountPrice}.00 x {cartItems}   </span>
+                            <span className='cart__items--bold'>${productProfile.discountPrice * cartItems}.00</span>
                         </div>
                         <RiDeleteBin6Line onClick={() => setCartItems(0)}/>
                     </div>
-                    <button>Checkout</button>
+                    <button onClick={() => setCartToggle(!cartToggle)}>Checkout</button>
                 </div>}
             </div>
         </aside>
