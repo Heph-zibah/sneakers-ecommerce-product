@@ -38,6 +38,7 @@ aside {
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    color: var(--darkGrayishBlue);
 }
 
 .cart__items img{
@@ -60,7 +61,10 @@ aside {
     border-radius: 7px;
     margin-top: 10px;
 }
-
+.cart__items--bold {
+    font-weight: 700;
+    color: var(--veryDarkBlue);
+}
 @media screen and (min-width:800px) {
     .cart {
         width: 330px;
