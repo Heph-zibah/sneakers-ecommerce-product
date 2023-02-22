@@ -7,7 +7,7 @@ const Auth = () => {
     const [user, setUser] = useState()
 
     const handleSubmit = async e => {
-
+        e.preventDefault()
     }
 
     if (user) {
