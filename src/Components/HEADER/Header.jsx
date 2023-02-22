@@ -47,7 +47,7 @@ const Header = ({cartItems, setCartItems}) => {
           </ul>
         </div>
       </div>
-      {cartToggle && <Cart cartItems={cartItems} setCartItems={setCartItems}/>}
+      {cartToggle && <Cart cartItems={cartItems} setCartItems={setCartItems} cartToggle={cartToggle} setCartToggle={setCartToggle}/>}
     </>
   )
 }
