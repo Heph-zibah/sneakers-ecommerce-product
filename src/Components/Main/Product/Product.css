@@ -53,6 +53,7 @@
 
 .product__intro h2 {
     font-size: 25px;
+    color: var(--veryDarkBlue);
 }
 
 .product__intro p{
@@ -193,5 +194,9 @@
 @media screen and (min-width:1020px){
     .product__action {
         flex-direction: row;
+    }
+    .product__intro h2 {
+        font-size: 35px;
+        letter-spacing: 2px;
     }
 }
