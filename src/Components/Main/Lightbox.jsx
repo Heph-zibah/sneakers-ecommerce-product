@@ -1,9 +1,15 @@
 import React from 'react'
+import {FaTimes} from 'react-icons/fa'
 
-const Lightbox = ({images, setLightbox}) => {
+const Lightbox = ({images, setLightbox, currentImage, setCurrentImage}) => {
 
   return (
-    <div>Lightbox</div>
+    <>
+    <div>
+        <FaTimes/>
+
+    </div>
+    </>
   )
 }
 
