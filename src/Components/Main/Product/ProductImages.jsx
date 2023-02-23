@@ -1,27 +1,25 @@
-import React from 'react'
-import lightbox from '../../../Assets/image-product-1.jpg'
+import React, { useState } from 'react'
+import img from '../../../Assets/image-product-1.jpg'
+import {images} from '../../HEADER/data'
+import Lightbox from '../Lightbox'
 import {IoIosArrowBack, IoIosArrowForward} from 'react-icons/io'
-import thumbnail1 from '../../../Assets/image-product-1-thumbnail.jpg'
-import thumbnail2 from '../../../Assets/image-product-2-thumbnail.jpg'
-import thumbnail3 from '../../../Assets/image-product-3-thumbnail.jpg'
-import thumbnail4 from '../../../Assets/image-product-4-thumbnail.jpg'
 
 const ProductImages = () => {
+  const [lightbox, setlightbox] = useState(false);
+  const [currentImage, setCurrentImage] = useState(0)
   return (
     <>
       <div className='product__images'>
         <div className='product__img'>
             <IoIosArrowBack className='product__arrow product__arrow--left'/>
-            <img src={lightbox} alt="shoe" />
+            <img src={img} alt="shoe" />
             <IoIosArrowForward className='product__arrow product__arrow--right'/>
         </div>
         <div className='product__thumbnail'>
-          <img src={thumbnail1} alt="show" />
-          <img src={thumbnail2} alt="show" />
-          <img src={thumbnail3} alt="show" />
-          <img src={thumbnail4} alt="show" />
+         
         </div>
        </div>
+       {lightbox && <Lightbox images={images} setlightbox={setlightbox} currentImage={currentImage} setCurrentImage={setCurrentImage}/>}
     </>
   )
 }
