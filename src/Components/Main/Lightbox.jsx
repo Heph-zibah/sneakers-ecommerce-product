@@ -6,7 +6,7 @@ const Lightbox = ({images, setLightbox, currentImage, setCurrentImage}) => {
   return (
     <>
     <div>
-        <FaTimes/>
+        <FaTimes onClick={() => setLightbox(false)}/>
 
     </div>
     </>
