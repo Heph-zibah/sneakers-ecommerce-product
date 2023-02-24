@@ -12,7 +12,7 @@ const ProductImages = () => {
       <div className='product__images'>
         <div className='product__img'>
             <IoIosArrowBack className='product__arrow product__arrow--left'/>
-            <img src={img} alt="shoe" />
+            <img src={images[currentImage].png} alt="shoe" onClick={() => window.innerWidth > 800 && setlightbox(true)}/>
             <IoIosArrowForward className='product__arrow product__arrow--right'/>
         </div>
         <div className='product__thumbnail'>
