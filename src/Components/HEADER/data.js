@@ -29,19 +29,19 @@ export const links =  [
 
 export const images  = [
     {
-        png: ('../../Assets/image-product-1.jpg'),
-        thumbnail: ('../../Assets/image-product-1-thumbnail.jpg')
+        png: require('../../Assets/image-product-1.jpg'),
+        thumbnail: require('../../Assets/image-product-1-thumbnail.jpg')
     },
     {
-        png: ('../../Assets/image-product-2.jpg'),
-        thumbnail: ('../../Assets/image-product-2-thumbnail.jpg')
+        png: require('../../Assets/image-product-2.jpg'),
+        thumbnail: require('../../Assets/image-product-2-thumbnail.jpg')
     },
     {
-        png: ('../../Assets/image-product-3.jpg'),
-        thumbnail: ('../../Assets/image-product-3-thumbnail.jpg')
+        png: require('../../Assets/image-product-3.jpg'),
+        thumbnail: require('../../Assets/image-product-3-thumbnail.jpg')
     },
     {
-        png: ('../../Assets/image-product-4.jpg'),
-        thumbnail: ('../../Assets/image-product-4-thumbnail.jpg')
+        png: require('../../Assets/image-product-4.jpg'),
+        thumbnail: require('../../Assets/image-product-4-thumbnail.jpg')
     },
 ]
