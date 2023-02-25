@@ -157,7 +157,7 @@
         object-fit: fill;
         border-radius: 20px;
     }
-    .product__thumbnail {
+    .product__thumbnail--wrapper {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -166,7 +166,7 @@
     }
     
     .product__thumbnail img {
-        width: 60px;
+        /* width: 60px; */
         border-radius: 8px;
 
     } 
