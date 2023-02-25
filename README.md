@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub)
+- Live Site URL: [Live site URL](https://sneakers-ecommerce-product.vercel.app/)
 
 ## My process
 
@@ -48,8 +48,6 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Lightbox](https://www.npmjs.com/package/lightbox.js-react) - For carousel
-- [Styled Components](https://styled-components.com/) - For styles
 
 ### What I learned
 
@@ -69,12 +67,11 @@ const proudOfThisFunc = () => {
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
 ### Useful resources
 
 - [Box Shadow CSS Generator](https://cssgenerator.org/box-shadow-css-generator.html) - This helped me to genrate box shadow. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Sang Le](https://www.frontendmentor.io/solutions/ecommerce-product-page-with-reactjs-BJynD7RBc) - This is an amazing solution which helped me finally understand lightbox. I'd recommend it to anyone still learning this concept.
 
 ## Author
 
