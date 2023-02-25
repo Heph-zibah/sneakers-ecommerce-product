@@ -13,6 +13,9 @@ function App() {
         <main>
         <Product itemCount={itemCount} setItemCount={setItemCount} setCartItems={setCartItems}/>
         </main>
+        <footer>Challenge by <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6/hub">
+          Frontend Mentor</a>. Coded by <a href="https://www.frontendmentor.io/profile/Heph-zibah">
+            Oluwatosin Abigail Daramola</a>.</footer>
       </div>
     </>
   );
