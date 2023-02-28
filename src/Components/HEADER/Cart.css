@@ -61,6 +61,10 @@ aside {
     border-radius: 7px;
     margin-top: 10px;
 }
+
+.cart__items--delete {
+    cursor: pointer;
+}
 .cart__items--bold {
     font-weight: 700;
     color: var(--veryDarkBlue);

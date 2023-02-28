@@ -23,7 +23,7 @@ const Cart = ({cartItems, setCartItems, cartToggle, setCartToggle}) => {
                             <span>${productProfile.discountPrice}.00 x {cartItems}   </span>
                             <span className='cart__items--bold'>${productProfile.discountPrice * cartItems}.00</span>
                         </div>
-                        <RiDeleteBin6Line onClick={() => setCartItems(0)}/>
+                        <RiDeleteBin6Line onClick={() => setCartItems(0)} className='cart__items--delete' />
                     </div>
                     <button onClick={() => setCartToggle(!cartToggle)}>Checkout</button>
                 </div>}

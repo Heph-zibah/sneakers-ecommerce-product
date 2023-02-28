@@ -48,6 +48,14 @@ main {
     padding: 0 0;
 }
 
+footer{
+    text-align: center;
+}
+
+footer a {
+    color: var(--orange);
+}
+
 @media screen and (min-width:800px) {
     main{
     padding: var(--body-padding-sm);

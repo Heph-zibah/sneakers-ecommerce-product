@@ -39,6 +39,7 @@ nav {
 .nav__cart {
     color: var(--darkGrayishBlue);
     font-size: 30px;
+    cursor: pointer;
 }
 
 .nav__cart:hover{
@@ -62,7 +63,7 @@ nav {
 }
 
 .nav__action img:hover {
-    border: 2px solid var(--orange);
+    border: 3px solid var(--orange);
     border-radius: 50%;
     transition: .5s ease-in;
 }
@@ -138,7 +139,7 @@ nav {
     .nav__link a:hover {
         color: var(--black);
         font-weight: 700;
-        border-bottom: 2px solid var(--orange);
+        border-bottom: 4px solid var(--orange);
         padding-bottom: 30px;
         transition: .5s ease-in;
     }
