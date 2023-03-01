@@ -14,7 +14,6 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)]
 
 ## Overview
 
@@ -31,7 +30,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Project preview](/src/Assets/Design/Sneakers%20EE-commerce%20App.png)
 
 ### Links
 
@@ -52,20 +51,49 @@ Users should be able to:
 ### What I learned
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<div className='cart'>
+                <div className=''>
+                    <p className='cart__header'>Cart</p>
+                    {cartItems === 0 && <p className='cart__body'>Your cart is empty</p>}
+                </div>
+                {cartItems > 0 && 
+                <div className='cart__container'> 
+                    <div className='cart__items'>
+                        <img src={thumbnail} alt='shoe' />
+                        <div>
+                            <p>{productProfile.productName}</p>
+                            <span>${productProfile.discountPrice}.00 x {cartItems}   </span>
+                            <span className='cart__items--bold'>${productProfile.discountPrice * cartItems}.00</span>
+                        </div>
+                        <RiDeleteBin6Line onClick={() => setCartItems(0)} className='cart__items--delete' />
+                    </div>
+                    <button onClick={() => setCartToggle(!cartToggle)}>Checkout</button>
+                </div>}
+            </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.lightbox__arrow {
+    position: absolute;
+    background-color: white;
+    top: 50%;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 35px;
+    cursor: pointer;
 }
 ```
 ```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+<Header cartItems={cartItems} setCartItems={setCartItems}/>
+<main>
+  <Product itemCount={itemCount} setItemCount={setItemCount} setCartItems={setCartItems}/>
+</main>
 ```
 
 ### Continued development
+- Props management in react
+- Documentation
+- React hooks
+- CSS A nimation
 
 
 ### Useful resources
@@ -78,5 +106,3 @@ const proudOfThisFunc = () => {
 - Website - [Oluwatosin A Daramola](https://medium.com/@oluwatosinhephzibah)
 - Frontend Mentor - [@Heph-zibah](https://www.frontendmentor.io/profile/Heph-zibah)
 - Twitter - [@undaunted_pen](https://twitter.com/undaunted_pen)
-
-## Acknowledgments
